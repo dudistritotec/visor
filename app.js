@@ -91,42 +91,125 @@ function setLayerVisible(layer, visible) {
   });
 }
 
-function renderPanel(layers) {
-  listEl.innerHTML = "";
-  layers.forEach((layer) => {
-    const row = document.createElement("label");
-    row.className = "layer-row";
+function makeLayerRow(layer, indent) {
+  const row = document.createElement("label");
+  row.className = "layer-row";
+  if (indent) row.classList.add("indent");
 
-    const swatch = document.createElement("span");
-    swatch.className = "swatch";
-    swatch.style.background = layer.color;
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.dataset.layerId = layer.id;
 
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.addEventListener("change", async (e) => {
-      if (e.target.checked) {
-        await activateLayer(layer);
-        setLayerVisible(layer, true);
-        if (layer.bbox) {
-          map.fitBounds(
-            [
-              [layer.bbox[0], layer.bbox[1]],
-              [layer.bbox[2], layer.bbox[3]],
-            ],
-            { padding: 60, maxZoom: 15, duration: 600 }
-          );
-        }
-      } else {
-        setLayerVisible(layer, false);
+  const swatch = document.createElement("span");
+  swatch.className = "swatch";
+  swatch.style.background = layer.color;
+
+  const text = document.createElement("span");
+  text.className = "layer-text";
+  text.innerHTML = `${layer.name} <small>${layer.feature_count}</small>`;
+
+  row.append(checkbox, swatch, text);
+
+  checkbox.addEventListener("change", async (e) => {
+    if (e.target.checked) {
+      await activateLayer(layer);
+      setLayerVisible(layer, true);
+      if (layer.bbox) {
+        map.fitBounds(
+          [
+            [layer.bbox[0], layer.bbox[1]],
+            [layer.bbox[2], layer.bbox[3]],
+          ],
+          { padding: 60, maxZoom: 15, duration: 600 }
+        );
+      }
+    } else {
+      setLayerVisible(layer, false);
+    }
+  });
+
+  return { row, checkbox };
+}
+
+function makeGroup(group) {
+  const wrap = document.createElement("div");
+  wrap.className = "layer-group collapsed"; // colapsado por defecto
+
+  const header = document.createElement("div");
+  header.className = "group-header";
+
+  const arrow = document.createElement("span");
+  arrow.className = "group-arrow";
+  arrow.textContent = "▸";
+
+  const groupCheckbox = document.createElement("input");
+  groupCheckbox.type = "checkbox";
+  groupCheckbox.className = "group-checkbox";
+
+  const groupName = document.createElement("span");
+  groupName.className = "group-name";
+  groupName.innerHTML = `${group.name} <small>${group.layers.length}</small>`;
+
+  header.append(arrow, groupCheckbox, groupName);
+
+  const body = document.createElement("div");
+  body.className = "group-body";
+
+  const childCheckboxes = [];
+  group.layers.forEach((layer) => {
+    const { row, checkbox } = makeLayerRow(layer, true);
+    body.appendChild(row);
+    childCheckboxes.push(checkbox);
+    checkbox.addEventListener("change", () => syncGroupCheckbox(groupCheckbox, childCheckboxes));
+  });
+
+  // Click en el nombre/flecha expande o colapsa; el checkbox no.
+  header.addEventListener("click", (e) => {
+    if (e.target === groupCheckbox) return;
+    wrap.classList.toggle("collapsed");
+  });
+
+  // Checkbox del grupo activa/desactiva todas sus capas de golpe.
+  groupCheckbox.addEventListener("change", () => {
+    groupCheckbox.indeterminate = false;
+    childCheckboxes.forEach((cb) => {
+      if (cb.checked !== groupCheckbox.checked) {
+        cb.checked = groupCheckbox.checked;
+        cb.dispatchEvent(new Event("change"));
       }
     });
+  });
 
-    const text = document.createElement("span");
-    text.className = "layer-text";
-    text.innerHTML = `${layer.name} <small>${layer.feature_count}</small>`;
+  wrap.append(header, body);
+  return wrap;
+}
 
-    row.append(checkbox, swatch, text);
+function syncGroupCheckbox(groupCheckbox, childCheckboxes) {
+  const checkedCount = childCheckboxes.filter((cb) => cb.checked).length;
+  if (checkedCount === 0) {
+    groupCheckbox.checked = false;
+    groupCheckbox.indeterminate = false;
+  } else if (checkedCount === childCheckboxes.length) {
+    groupCheckbox.checked = true;
+    groupCheckbox.indeterminate = false;
+  } else {
+    groupCheckbox.checked = false;
+    groupCheckbox.indeterminate = true;
+  }
+}
+
+function renderPanel(manifest) {
+  listEl.innerHTML = "";
+
+  // Capas sueltas (raíz de data/): siempre visibles, sin colapsar.
+  manifest.root_layers.forEach((layer) => {
+    const { row } = makeLayerRow(layer, false);
     listEl.appendChild(row);
+  });
+
+  // Capas agrupadas (subcarpetas de data/): colapsadas por defecto.
+  manifest.groups.forEach((group) => {
+    listEl.appendChild(makeGroup(group));
   });
 }
 
@@ -134,8 +217,9 @@ async function init() {
   setStatus("Cargando manifest de capas…");
   const res = await fetch("data/layers.json");
   const manifest = await res.json();
-  renderPanel(manifest.layers);
-  setStatus(`${manifest.layers.length} capas disponibles — actívalas desde el panel`);
+  renderPanel(manifest);
+  const total = manifest.root_layers.length + manifest.groups.reduce((n, g) => n + g.layers.length, 0);
+  setStatus(`${total} capas disponibles — actívalas desde el panel`);
 }
 
 map.on("load", init);

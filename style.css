@@ -112,6 +112,70 @@ html, body {
   font-variant-numeric: tabular-nums;
 }
 
+.layer-row.indent {
+  padding-left: 30px;
+}
+
+.layer-group {
+  border-radius: 3px;
+  margin: 2px 0;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.group-header:hover {
+  background: rgba(43, 110, 117, 0.08);
+}
+
+.group-arrow {
+  display: inline-block;
+  width: 10px;
+  font-size: 11px;
+  color: #6b6b63;
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.layer-group:not(.collapsed) > .group-header .group-arrow {
+  transform: rotate(90deg);
+}
+
+.group-checkbox {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--teal);
+  flex-shrink: 0;
+}
+
+.group-name {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.group-name small {
+  color: #8a877c;
+  font-variant-numeric: tabular-nums;
+}
+
+.group-body {
+  overflow: hidden;
+}
+
+.layer-group.collapsed > .group-body {
+  display: none;
+}
+
 #panel-footer {
   padding: 10px 18px;
   border-top: 1px solid var(--line);
