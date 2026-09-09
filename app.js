@@ -1,6 +1,4 @@
 // Mapa base: OpenFreeMap (vector, gratuito, sin API key).
-// Si prefieres tiles raster de OSM, cambia MAP_STYLE por un objeto style
-// con una fuente "raster" apuntando a tile.openstreetmap.org.
 const MAP_STYLE = "https://tiles.openfreemap.org/styles/liberty";
 
 const map = new maplibregl.Map({
