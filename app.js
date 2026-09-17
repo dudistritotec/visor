@@ -64,6 +64,31 @@ async function activateLayer(layer, popupToggle) {
   const clickLayerId = `${layer.id}__${layer.type === "point" ? "circle" : layer.type === "line" ? "line" : "fill"}`;
   map.on("click", clickLayerId, (e) => {
     const props = e.features[0].properties;
+
+    // Capa de sensores PurpleAir: popup con el widget embebido en vivo,
+    // en vez de la tabla genérica de propiedades.
+    if (layer.id === "Calidad del Aire__purpleair") {
+      const sensorId = props.ID;
+      const widgetDivId = `PurpleAirWidget_${sensorId}_module_US_EPA_AQI_conversion_C0_average_10_layer_US_EPA_AQI`;
+      const popup = new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(
+          `<div class="popup-purpleair">
+             <strong>${props.sensor ?? "Sensor"}</strong>
+             <div id="${widgetDivId}">Cargando widget PurpleAir…</div>
+           </div>`
+        )
+        .addTo(map);
+
+      // El script del widget necesita que el div ya exista en el DOM,
+      // así que se inyecta después de abrir el popup.
+      const script = document.createElement("script");
+      script.src = `https://www.purpleair.com/pa.widget.js?module=US_EPA_AQI&conversion=C0&average=10&layer=US_EPA_AQI&container=${widgetDivId}`;
+      document.body.appendChild(script);
+      popup.on("close", () => script.remove());
+      return;
+    }
+
     const rows = Object.entries(props)
       .map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`)
       .join("");
