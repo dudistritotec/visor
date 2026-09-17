@@ -11,6 +11,7 @@ const map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl(), "top-right");
 
 const loadedLayers = new Set();
+const purpleAirWidgets = new Map(); // sensorId -> div ya cargado con el widget
 const statusEl = document.getElementById("status-text");
 const listEl = document.getElementById("layer-list");
 
@@ -51,6 +52,57 @@ async function activateLayer(layer, popupToggle) {
 
   map.addSource(layer.id, { type: "geojson", data: geojson });
 
+  // Capa de sensores PurpleAir: precargar cada widget UNA sola vez
+  // (en vez de al hacer click), para que ya esté listo cuando se abra el popup.
+  if (layer.id === "Calidad del Aire__purpleair") {
+    let holding = document.getElementById("purpleair-widget-holding");
+    if (!holding) {
+      holding = document.createElement("div");
+      holding.id = "purpleair-widget-holding";
+      holding.style.display = "none";
+      document.body.appendChild(holding);
+    }
+    geojson.features.forEach((f) => {
+      const sensorId = f.properties.ID;
+      if (purpleAirWidgets.has(sensorId)) return;
+
+      const wrap = document.createElement("div");
+      wrap.className = "popup-purpleair";
+
+      const title = document.createElement("strong");
+      title.textContent = f.properties.sensor ?? "Sensor";
+
+      const widgetDivId = `PurpleAirWidget_${sensorId}_module_US_EPA_AQI_conversion_C0_average_10_layer_US_EPA_AQI`;
+      const widgetDiv = document.createElement("div");
+      widgetDiv.id = widgetDivId;
+      widgetDiv.textContent = "Cargando widget PurpleAir…";
+
+      const fallback = document.createElement("a");
+      fallback.href = `https://www.purpleair.com/map?select=${sensorId}`;
+      fallback.target = "_blank";
+      fallback.rel = "noopener";
+      fallback.className = "popup-purpleair-fallback";
+      fallback.textContent = "Ver en purpleair.com ↗";
+      fallback.style.display = "none";
+
+      wrap.append(title, widgetDiv, fallback);
+      holding.appendChild(wrap);
+      purpleAirWidgets.set(sensorId, wrap);
+
+      // Si el widget no reemplazó su contenido en 8s, se asume que falló
+      // (script bloqueado, sensor caído, red lenta) y se muestra el enlace.
+      setTimeout(() => {
+        if (widgetDiv.textContent === "Cargando widget PurpleAir…") {
+          fallback.style.display = "inline-block";
+        }
+      }, 8000);
+
+      const script = document.createElement("script");
+      script.src = `https://www.purpleair.com/pa.widget.js?module=US_EPA_AQI&conversion=C0&average=10&layer=US_EPA_AQI&container=${widgetDivId}`;
+      document.body.appendChild(script);
+    });
+  }
+
   paintForType(layer.type, layer.color).forEach((def, i) => {
     map.addLayer({
       id: `${layer.id}__${def.type}`,
@@ -65,27 +117,14 @@ async function activateLayer(layer, popupToggle) {
   map.on("click", clickLayerId, (e) => {
     const props = e.features[0].properties;
 
-    // Capa de sensores PurpleAir: popup con el widget embebido en vivo,
-    // en vez de la tabla genérica de propiedades.
+    // Capa de sensores PurpleAir: mostrar el widget que ya se precargó
+    // al activar la capa (ver activateLayer), no crear uno nuevo aquí.
     if (layer.id === "Calidad del Aire__purpleair") {
-      const sensorId = props.ID;
-      const widgetDivId = `PurpleAirWidget_${sensorId}_module_US_EPA_AQI_conversion_C0_average_10_layer_US_EPA_AQI`;
-      const popup = new maplibregl.Popup()
+      const wrap = purpleAirWidgets.get(props.ID);
+      new maplibregl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML(
-          `<div class="popup-purpleair">
-             <strong>${props.sensor ?? "Sensor"}</strong>
-             <div id="${widgetDivId}">Cargando widget PurpleAir…</div>
-           </div>`
-        )
+        .setDOMContent(wrap ?? document.createTextNode("Widget no disponible"))
         .addTo(map);
-
-      // El script del widget necesita que el div ya exista en el DOM,
-      // así que se inyecta después de abrir el popup.
-      const script = document.createElement("script");
-      script.src = `https://www.purpleair.com/pa.widget.js?module=US_EPA_AQI&conversion=C0&average=10&layer=US_EPA_AQI&container=${widgetDivId}`;
-      document.body.appendChild(script);
-      popup.on("close", () => script.remove());
       return;
     }
 
