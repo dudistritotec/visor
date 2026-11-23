@@ -3,74 +3,92 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2882, 25.6453] },
+      "geometry": { "type": "Point", "coordinates": [-100.2882749, 25.64552119] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "ActiveOne Business Solutions",
         "Ubicación": "Av. Eugenio Garza Sada 3001, Nueva España, Distrito Tec, 66020 Monterrey, N.L.",
         "Descripción": "Consultoría en soluciones de negocio y TI",
-        "Latitud": 25.6453,
-        "Longitud": -100.2882
+        "Latitud": 25.64552119,
+        "Longitud": -100.2882749,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.278, 25.6647] },
+      "geometry": { "type": "Point", "coordinates": [-100.2779657, 25.66496081] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Alcaware",
         "Ubicación": "Francisco Villa 650, Jardín Español, 64820 M Monterrey, N.L.",
         "Descripción": "Consultoría en soluciones de negocio y TI",
-        "Latitud": 25.6647,
-        "Longitud": -100.278
+        "Latitud": 25.66496081,
+        "Longitud": -100.2779657,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2935772, 25.6451041] },
+      "geometry": { "type": "Point", "coordinates": [-100.2910184, 25.64532173] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "Arcadial",
         "Ubicación": "Buenos Aires 22, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "",
-        "Latitud": 25.6451041,
-        "Longitud": -100.2935772
+        "Latitud": 25.64532173,
+        "Longitud": -100.2910184,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2958, 25.6498] },
+      "geometry": { "type": "Point", "coordinates": [-100.2957658, 25.64998542] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Asesoria Dinámica en negocios (ADN)",
         "Ubicación": "Físicos #326 Col. Tecnológico, Monterrey, NL 64700",
         "Descripción": "Consultoría en soluciones de negocio y TI",
-        "Latitud": 25.6498,
-        "Longitud": -100.2958
+        "Latitud": 25.64998542,
+        "Longitud": -100.2957658,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2915, 25.6446] },
+      "geometry": { "type": "Point", "coordinates": [-100.2914223, 25.64624173] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "AVATTAR CONSULTING",
         "Ubicación": "Buenos Aires 17, Alta Vista, 64840 Monterrey, N.L.",
         "Descripción": "Consultoría en DevOps, seguridad, analítica e ITOM",
-        "Latitud": 25.6446,
-        "Longitud": -100.2915
+        "Latitud": 25.64624173,
+        "Longitud": -100.2914223,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.3153694, 25.6509215] },
+      "geometry": { "type": "Point", "coordinates": [-100.2950734, 25.65546238] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "BACIT-TECHNOLOGIES",
         "Ubicación": "Av. Eugenio Garza Sada Sur 2324, Roma, Distrito Tec, 64700",
         "Descripción": "Ciencia de Datos y TICs",
-        "Latitud": 25.6509215,
-        "Longitud": -100.3153694
+        "Latitud": 25.65546238,
+        "Longitud": -100.2950734,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -82,31 +100,40 @@
         "Ubicación": "Buenos Aires 22, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "",
         "Latitud": 25.6450993,
-        "Longitud": -100.2909969
+        "Longitud": -100.2909969,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2928, 25.6549] },
+      "geometry": { "type": "Point", "coordinates": [-100.2927876, 25.6550528] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "BOHRIM Building Consultancy",
         "Ubicación": "Av. Eugenio Garza Sada 2411, Roma, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Consultoría especializada en edificación",
-        "Latitud": 25.6549,
-        "Longitud": -100.2928
+        "Latitud": 25.6550528,
+        "Longitud": -100.2927876,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2734, 25.6483] },
+      "geometry": { "type": "Point", "coordinates": [-100.2734902, 25.64849535] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Comercializadora Difrisa",
         "Ubicación": "C. Bahía de las Islas 3620, Rincon De La Primavera, 64834 Monterrey, N.L.",
         "Descripción": "Comercializadora de productos (por verificar giro)",
-        "Latitud": 25.6483,
-        "Longitud": -100.2734
+        "Latitud": 25.64849535,
+        "Longitud": -100.2734902,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -118,7 +145,10 @@
         "Ubicación": "Hamburgo 206, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "Consultoría especializada medioambiental",
         "Latitud": 25.6457802,
-        "Longitud": -100.2862841
+        "Longitud": -100.2862841,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -130,19 +160,25 @@
         "Ubicación": "Palestina 555, Roma, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Tecnologías de la Información y Comunicaciones",
         "Latitud": 25.6531443,
-        "Longitud": -100.3011353
+        "Longitud": -100.3011353,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2977, 25.6543] },
+      "geometry": { "type": "Point", "coordinates": [-100.2976926, 25.65445966] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "CYTRUM",
         "Ubicación": "Palestina 315, Col. Roma, 64740 Monterrey, N.L.",
         "Descripción": "Consultoría en soluciones de negocio y TI",
-        "Latitud": 25.6543,
-        "Longitud": -100.2977
+        "Latitud": 25.65445966,
+        "Longitud": -100.2976926,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -154,19 +190,25 @@
         "Ubicación": "Sevilla 107, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "Ingeniería Avanzada e Industria 4.0",
         "Latitud": 25.6450772,
-        "Longitud": -100.2902989
+        "Longitud": -100.2902989,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2759, 25.654] },
+      "geometry": { "type": "Point", "coordinates": [-100.2758338, 25.6554199] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Efficientix Monterrey (Oracle NetSuite)",
         "Ubicación": "Centro Empresarial Nuevo Sur torre 1, Av. Revolución 2703 - 2-Piso 1, Ladrillera, 64830 Monterrey, N.L.",
         "Descripción": "Consultoría e implementación de Oracle NetSuite",
-        "Latitud": 25.654,
-        "Longitud": -100.2759
+        "Latitud": 25.6554199,
+        "Longitud": -100.2758338,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -178,7 +220,10 @@
         "Ubicación": "Técnicos 277, Tecnologico, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Institución de Investigación Científica Pública.",
         "Latitud": 25.6457861,
-        "Longitud": -100.2963247
+        "Longitud": -100.2963247,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -190,19 +235,25 @@
         "Ubicación": "Junco de la Vega 8, Col. Altavista, C.P. 64840, Monterrey, Nuevo León.",
         "Descripción": "Servicios Empresariales de Excelencia para el Desarrollo de Software. Fábrica de software enfocada en el desarrollo de aplicaciones empresariales a la medida, bases de datos complejas e infraestructura de TI corporativa.",
         "Latitud": 25.6499068,
-        "Longitud": -100.2869243
+        "Longitud": -100.2869243,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2763, 25.6527] },
+      "geometry": { "type": "Point", "coordinates": [-100.2765544, 25.653842] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "Enkoder Software Developers",
         "Ubicación": "Torre 2 del Centro empresarial, Av. Revolución 2703-Piso 4, Ladrillera, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Desarrollo de software a la medida",
-        "Latitud": 25.6527,
-        "Longitud": -100.2763
+        "Latitud": 25.653842,
+        "Longitud": -100.2765544,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -214,43 +265,55 @@
         "Ubicación": "Ave. Eugenio Garza Sada 3367, Col. Altavista",
         "Descripción": "Tecnologías de la Información y Comunicaciones",
         "Latitud": 25.6436035,
-        "Longitud": -100.2893561
+        "Longitud": -100.2893561,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.291, 25.6551] },
+      "geometry": { "type": "Point", "coordinates": [-100.2911819, 25.65562423] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "H-CLIP",
         "Ubicación": "Av. Junco de la vega 2403, Colonia Cerro de la Silla. Monterrey, N.L.",
         "Descripción": "Consultoría en soluciones de negocio y TI",
-        "Latitud": 25.6551,
-        "Longitud": -100.291
+        "Latitud": 25.65562423,
+        "Longitud": -100.2911819,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2881, 25.6453] },
+      "geometry": { "type": "Point", "coordinates": [-100.2882165, 25.64598679] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "IEXGLOBAL GROUP",
         "Ubicación": "Av. Eugenio Garza Sada Sur 3001-Suite 9, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "Consultoría empresarial/TI",
-        "Latitud": 25.6453,
-        "Longitud": -100.2881
+        "Latitud": 25.64598679,
+        "Longitud": -100.2882165,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2906, 25.6477] },
+      "geometry": { "type": "Point", "coordinates": [-100.2905995, 25.64855923] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "Iliux Soluciones",
         "Ubicación": "Av. Eugenio Garza Sada Sur 427-Loc 14, Tecnologico, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Soluciones de software",
-        "Latitud": 25.6477,
-        "Longitud": -100.2906
+        "Latitud": 25.64855923,
+        "Longitud": -100.2905995,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -262,43 +325,55 @@
         "Ubicación": "Principal 326, Ladrillera, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Empresas de Manufactura / Servicios Industriales Tradicionales",
         "Latitud": 25.655323,
-        "Longitud": -100.2799379
+        "Longitud": -100.2799379,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2931, 25.6561] },
+      "geometry": { "type": "Point", "coordinates": [-100.2930861, 25.65684685] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "INFOFIN",
         "Ubicación": "Calle Alejandría #202, Col. Roma, Monterrey, N.L., C.P. 64700.",
         "Descripción": "Productividad Integral en Sistemas. Desarrolladora de software especializado en sistemas de planificación de recursos empresariales (ERP) avanzados, automatización de flujos fiscales y analítica de datos financieros.",
-        "Latitud": 25.6561,
-        "Longitud": -100.2931
+        "Latitud": 25.65684685,
+        "Longitud": -100.2930861,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2947, 25.648] },
+      "geometry": { "type": "Point", "coordinates": [-100.2946128, 25.64866799] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "IT ANALYTICS MX",
         "Ubicación": "Arquitectos 130, Tecnologico, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Consultoría en analítica de datos y TI",
-        "Latitud": 25.648,
-        "Longitud": -100.2947
+        "Latitud": 25.64866799,
+        "Longitud": -100.2946128,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2916, 25.6628] },
+      "geometry": { "type": "Point", "coordinates": [-100.2915511, 25.6629765] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "ITRONIC",
         "Ubicación": "Pedro Ampudia, La Florida 1917, 64810 Monterrey, N.L.",
         "Descripción": "Empresa de tecnología (por verificar)",
-        "Latitud": 25.6628,
-        "Longitud": -100.2916
+        "Latitud": 25.6629765,
+        "Longitud": -100.2915511,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -310,19 +385,25 @@
         "Ubicación": "Torre Micropolis, Av. Eugenio Garza Sada 3820-Piso 7, Más Palomas (Valle de Santiago), 64860 Monterrey, N.L.",
         "Descripción": "Ubicada en la periferia inmediata (eje sur de Garza Sada). Desarrolla e integra sistemas propietarios de control de procesos (KDS) y automatización de flujos repetitivos para la industria del servicio.",
         "Latitud": 25.6339214,
-        "Longitud": -100.2823168
+        "Longitud": -100.2823168,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2731, 25.6589] },
+      "geometry": { "type": "Point", "coordinates": [-100.2730954, 25.65992921] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "LEADEXPRO",
         "Ubicación": "Av. José Alvarado 2545-Loc 5, Distrito Tec, 64820 Monterrey, N.L.",
         "Descripción": "Generación de prospectos / consultoría",
-        "Latitud": 25.6589,
-        "Longitud": -100.2731
+        "Latitud": 25.65992921,
+        "Longitud": -100.2730954,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -334,7 +415,10 @@
         "Ubicación": "Niza 3102, Narvarte, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Biotecnología / Agritech",
         "Latitud": 25.6498251,
-        "Longitud": -100.2847293
+        "Longitud": -100.2847293,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -346,19 +430,25 @@
         "Ubicación": "Buenos Aires 22, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "",
         "Latitud": 25.6451048,
-        "Longitud": -100.2913759
+        "Longitud": -100.2913759,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2927, 25.6461] },
+      "geometry": { "type": "Point", "coordinates": [-100.2925039, 25.64739224] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "Nodotech",
         "Ubicación": "Av. Luis Elizondo 304, Tecnologico, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Desarrollo tecnológico",
-        "Latitud": 25.6461,
-        "Longitud": -100.2927
+        "Latitud": 25.64739224,
+        "Longitud": -100.2925039,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -370,7 +460,10 @@
         "Ubicación": "Av. Del Estado 215A, Tecnologico, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Desarrollo de software",
         "Latitud": 25.6497381,
-        "Longitud": -100.2943039
+        "Longitud": -100.2943039,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -382,19 +475,25 @@
         "Ubicación": "Int. de Galerías 3453-Loc 2, Rincon De La Primavera, 67173 Monterrey, N.L.",
         "Descripción": "Domótica e Internet de las Cosas - IoT",
         "Latitud": 25.6498286,
-        "Longitud": -100.2966431
+        "Longitud": -100.2966431,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2802, 25.6462] },
+      "geometry": { "type": "Point", "coordinates": [-100.2803163, 25.64686728] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Secnesys SAPI de CV",
         "Ubicación": "Playa Mallorca 3500, Col. La Primavera 1 Sector, C.P. 64830, Monterrey N.L.",
         "Descripción": "Consultoría en seguridad informática",
-        "Latitud": 25.6462,
-        "Longitud": -100.2802
+        "Latitud": 25.64686728,
+        "Longitud": -100.2803163,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -406,31 +505,40 @@
         "Ubicación": "Av. Revolución 1999-Loc 12B, Sin Nombre 35, Buenos Aires, 64800 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
         "Latitud": 25.6597473,
-        "Longitud": -100.2838454
+        "Longitud": -100.2838454,
+        "Webscraping": "DENUE2026",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2788, 25.6525] },
+      "geometry": { "type": "Point", "coordinates": [-100.2786201, 25.65337311] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "SKILL Informática / iBlink",
         "Ubicación": "Av. Ricardo Covarrubias 3532, Primavera 1er Sector, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Sistema de punto de venta para restaurantes",
-        "Latitud": 25.6525,
-        "Longitud": -100.2788
+        "Latitud": 25.65337311,
+        "Longitud": -100.2786201,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2921, 25.6493] },
+      "geometry": { "type": "Point", "coordinates": [-100.2920771, 25.64991892] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "SOFTSETI",
         "Ubicación": "Filósofos 221 203, Tecnologico, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Desarrollo de software",
-        "Latitud": 25.6493,
-        "Longitud": -100.2921
+        "Latitud": 25.64991892,
+        "Longitud": -100.2920771,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -442,7 +550,10 @@
         "Ubicación": "Av. Eugenio Garza Sada #3513, Colonia Arroyo Seco (Límite inmediato de DistritoTec), Monterrey, N.L., C.P. 64740.",
         "Descripción": "Empresa enfocada en ingeniería fotovoltaica avanzada, desarrollo de proyectos de energía solar e integración de tecnologías de eficiencia energética para mitigar la huella de carbono industrial",
         "Latitud": 25.6411491,
-        "Longitud": -100.288074
+        "Longitud": -100.288074,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -454,19 +565,25 @@
         "Ubicación": "Priv. Agustín Lara 18, Sin Nombre 35, Distrito Tec, 64820 Monterrey, N.L.",
         "Descripción": "Empresas de Manufactura / Servicios Industriales Tradicionales",
         "Latitud": 25.6597041,
-        "Longitud": -100.2812346
+        "Longitud": -100.2812346,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2781, 25.6584] },
+      "geometry": { "type": "Point", "coordinates": [-100.2782601, 25.65945059] },
       "properties": {
         "Categoría": "EBT",
         "Nombre": "Teledinámica México",
         "Ubicación": "Priv. Agustín Lara 12, Sin Nombre 35, Distrito Tec, 64820 Monterrey, N.L.",
         "Descripción": "Soluciones de telecomunicaciones",
-        "Latitud": 25.6584,
-        "Longitud": -100.2781
+        "Latitud": 25.65945059,
+        "Longitud": -100.2782601,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
@@ -478,163 +595,205 @@
         "Ubicación": "Calle Patagonia y Quito s/n, Col. Altavista, Monterrey, N.L., C.P. 64840.",
         "Descripción": "Empresa de base científico-tecnológica (PropTech/Cleantech) que utiliza software especializado de simulación termodinámica y algoritmos predictivos para diseñar edificaciones sustentables de alta eficiencia energética",
         "Latitud": 25.6442012,
-        "Longitud": -100.2883559
+        "Longitud": -100.2883559,
+        "Webscraping": "No",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2982, 25.6526] },
+      "geometry": { "type": "Point", "coordinates": [-100.2983542, 25.65393746] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Trillion Ciberseguridad e Infraestructura en Redes",
         "Ubicación": "Palestina 590, Roma, Distrito Tec, 64700 Monterrey, N.L.",
         "Descripción": "Consultoría en ciberseguridad e infraestructura",
-        "Latitud": 25.6526,
-        "Longitud": -100.2982
+        "Latitud": 25.65393746,
+        "Longitud": -100.2983542,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2906, 25.6477] },
+      "geometry": { "type": "Point", "coordinates": [-100.2907153, 25.64841512] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Value Digital Innovation",
         "Ubicación": "Av. Eugenio Garza Sada 427, Altavista, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "Consultoría en innovación digital",
-        "Latitud": 25.6477,
-        "Longitud": -100.2906
+        "Latitud": 25.64841512,
+        "Longitud": -100.2907153,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2765, 25.6532] },
+      "geometry": { "type": "Point", "coordinates": [-100.2764927, 25.65411249] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "ZpertLink",
         "Ubicación": "Av. Revolución 2703, Ladrillera, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6532,
-        "Longitud": -100.2765
+        "Latitud": 25.65411249,
+        "Longitud": -100.2764927,
+        "Webscraping": "Si",
+        "Web": "",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2763622, 25.655304] },
+      "geometry": { "type": "Point", "coordinates": [-100.2763798, 25.65637877] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "IMPULSORA INTERVISION",
         "Ubicación": "Molino 219-A, Ladrillera, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Empresas de Manufactura / Servicios Industriales Tradicionales",
-        "Latitud": 25.655304,
-        "Longitud": -100.2763622
+        "Latitud": 25.65637877,
+        "Longitud": -100.2763798,
+        "Webscraping": "Oscar",
+        "Web": "https://www.quiminet.com/shr/es/impulsora-intervision-153057520471.htm",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.3002432, 25.6299129] },
+      "geometry": { "type": "Point", "coordinates": [-100.3001173, 25.63146401] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "INTECH",
         "Ubicación": "Planificadores 2805, Empleados Sfeo, Sin Nombre de Col 39, 64909 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6299129,
-        "Longitud": -100.3002432
+        "Latitud": 25.63146401,
+        "Longitud": -100.3001173,
+        "Webscraping": "Oscar",
+        "Web": "https://infinitytech.mx/nosotros/",
+        "notas": "Fuera de distritotec"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.3125754, 25.6722933] },
+      "geometry": { "type": "Point", "coordinates": [-100.2826315, 25.66240661] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Tecnología y Desarrollo en Informática SA de CV",
         "Ubicación": "Av. Revolución 827, Jardín Español, 64820 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6722933,
-        "Longitud": -100.3125754
+        "Latitud": 25.66240661,
+        "Longitud": -100.2826315,
+        "Webscraping": "Oscar",
+        "Web": "https://tdisa.net",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2991961, 25.6596934] },
+      "geometry": { "type": "Point", "coordinates": [-100.2965997, 25.65994002] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "CERTERUS",
         "Ubicación": "Av. Junco de la Vega 2011, Fraccionamiento Florida, La Florida, 64810 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6596934,
-        "Longitud": -100.2991961
+        "Latitud": 25.65994002,
+        "Longitud": -100.2965997,
+        "Webscraping": "Oscar",
+        "Web": "https://www.certerus.com/acerca-de-certerus/",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2833798, 25.6408231] },
+      "geometry": { "type": "Point", "coordinates": [-100.2808303, 25.64193122] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "TECONOLOGÍAS LOZANO",
         "Ubicación": "Av. Alfonso Reyes 214-Piso 4, Oficina 27-29, Contry, 64860 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6408231,
-        "Longitud": -100.2833798
+        "Latitud": 25.64193122,
+        "Longitud": -100.2808303,
+        "Webscraping": "Oscar",
+        "Web": "https://www.lozano.technology/#inicio",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.3067354, 25.656753] },
+      "geometry": { "type": "Point", "coordinates": [-100.3013845, 25.6568182] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "ETITEC",
         "Ubicación": "Libertad 1624, Nuevo Repueblo, 64700 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.656753,
-        "Longitud": -100.3067354
+        "Latitud": 25.6568182,
+        "Longitud": -100.3013845,
+        "Webscraping": "Oscar",
+        "Web": "https://etitec.com",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2885058, 25.6453911] },
+      "geometry": { "type": "Point", "coordinates": [-100.2889527, 25.64549703] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Ambystech",
-        "Ubicación": "Eugenio, Av. Eugenio Garza Sada 3001, Altavista, Distrito Tec, 67275 Monterrey, N.L.",
+        "Ubicación": "Av. Eugenio Garza Sada 3001, Altavista, Distrito Tec, 67275 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6453911,
-        "Longitud": -100.2885058
+        "Latitud": 25.64549703,
+        "Longitud": -100.2889527,
+        "Webscraping": "Oscar",
+        "Web": "https://www.ambystech.com/es/location/",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2783785, 25.6539998] },
+      "geometry": { "type": "Point", "coordinates": [-100.2774692, 25.65559861] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "TI Monterrey",
         "Ubicación": "Av. Revolución 2703-2, Ladrillera, Distrito Tec, 64830 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6539998,
-        "Longitud": -100.2783785
+        "Latitud": 25.65559861,
+        "Longitud": -100.2774692,
+        "Webscraping": "Oscar",
+        "Web": "https://www.timonterrey.com/contacto.php",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2783785, 25.6539998] },
+      "geometry": { "type": "Point", "coordinates": [-100.2774692, 25.65559861] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "ANK Solutions",
         "Ubicación": "Av. Revolución 2703, Ladrillera, Distrito Tec, 64830 Monterrey, N.L., México",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6539998,
-        "Longitud": -100.2783785
+        "Latitud": 25.65559861,
+        "Longitud": -100.2774692,
+        "Webscraping": "Oscar",
+        "Web": "https://anks.mx/contacto/",
+        "notas": ""
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-100.2905289, 25.6492331] },
+      "geometry": { "type": "Point", "coordinates": [-100.2880027, 25.64993018] },
       "properties": {
         "Categoría": "EC",
         "Nombre": "Techmake Solutions",
         "Ubicación": "Av. Luis Elizondo 400-L-7, Nueva España, Distrito Tec, 64840 Monterrey, N.L.",
         "Descripción": "Consultoría especializada TI",
-        "Latitud": 25.6492331,
-        "Longitud": -100.2905289
+        "Latitud": 25.64993018,
+        "Longitud": -100.2880027,
+        "Webscraping": "Oscar",
+        "Web": "https://techmake.com/pages/alta-tecnologia",
+        "notas": ""
       }
     }
   ]
