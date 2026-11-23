@@ -114,7 +114,7 @@
         {
           "id": "Empresas de Innovación__Servicios de apoyo",
           "name": "Servicios de apoyo",
-          "file": "data/Empresas de Innovación/Servicios de apoyo.geojson",
+          "file": "data/Empresas de Innovación/Apoyo.geojson",
           "type": "point",
           "color": "#27AE60",
           "feature_count": 23,
