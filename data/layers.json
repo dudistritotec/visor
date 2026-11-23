@@ -112,7 +112,7 @@
           "bbox": [-100.3153694, 25.6299129, -100.2731, 25.6722933]
         },
         {
-          "id": "Empresas de Innovación__Servicios de apoyo",
+          "id": "Empresas de Innovación__Apoyo",
           "name": "Servicios de apoyo",
           "file": "data/Empresas de Innovación/Apoyo.geojson",
           "type": "point",
